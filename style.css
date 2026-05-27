@@ -1,0 +1,288 @@
+/* WARNA MODERN */
+:root {
+    --primary: #4361ee;
+    --secondary: #3f37c9;
+    --accent: #f72585;
+    --bg: #f1f3f8;
+    --white: #ffffff;
+}
+
+/* BODY */
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
+    /* Background gradasi */
+    background: linear-gradient(135deg, #052079, #c5670a);
+
+    /* Efek tambahan biar tidak kosong */
+    background-image:
+        radial-gradient(at 0% 0%, rgba(15, 228, 32, 0.1) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(247, 37, 133, 0.1) 0px, transparent 50%);
+
+    color: #8b1c1c;
+}
+
+.page-wrapper {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+
+    background: rgb(108, 198, 214);
+    border-radius: 25px;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    color: rgb(245, 236, 72);
+    border-radius: 0 0 20px 20px;
+}
+
+/* NAVBAR */
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+/* NAVBAR BOX */
+.navbar a {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 18px;
+    border-radius: 10px;
+    margin: 0 8px;
+    color: rgb(44, 216, 119);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    backdrop-filter: blur(5px);
+}
+
+/* HOVER EFFECT */
+.navbar a:hover {
+    background: rgb(209, 218, 157);
+    color: #4361ee;
+    transform: translateY(-2px);
+}
+
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 900px;
+}
+
+.hero img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+
+/* JUDUL UTAMA */
+.hero h2 {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #be1d53, #150a7a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* JUDUL VIDEO */
+.video h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+    color: #1532b4;
+    position: relative;
+}
+
+.video h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #3d278f;
+    margin: 8px auto;
+    border-radius: 10px;
+}
+
+.video video {
+    width: 70%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(67, 97, 238, 0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    color: var(--primary);
+}
+
+/* VIDEO */
+.video video {
+    width: 80%;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+/* PAKET */
+.paket-item {
+    display: flex;
+    align-items: center;
+    background: white;
+    margin: 15px 0;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.paket-item img {
+    width: 80px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+/* CONTAINER */
+.paket-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* CARD */
+.paket-card {
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.paket-card:hover {
+    transform: translateY(-5px);
+}
+
+/* GAMBAR */
+.paket-img {
+    width: 35%;
+}
+
+.paket-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ISI */
+.paket-content {
+    padding: 20px;
+    width: 65%;
+}
+
+/* JUDUL */
+.paket-content h3 {
+    color: #4361ee;
+}
+
+/* HARGA */
+.harga {
+    color: #f72585;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
+/* CARD */
+.paket-card {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+/* HOVER */
+.paket-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(67,97,238,0.2);
+}
+
+/* JUDUL */
+.paket-card h3 {
+    color: #4361ee;
+}
+
+/* HARGA */
+.harga {
+    font-weight: bold;
+    color: #f72585;
+    margin: 10px 0;
+}
+
+/* LIST */
+.paket-card ul {
+    padding-left: 18px;
+}
+
+.btn {
+    background: #4361ee;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    background: linear-gradient(90deg, var(--secondary), var(--primary));
+    color: white;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+}
+
