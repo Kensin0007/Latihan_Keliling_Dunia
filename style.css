@@ -463,3 +463,26 @@ body {
 .list-wisata li{
     margin:8px 0;
 }
+
+.card-list{
+    background: white;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card-list h2{
+    margin-bottom: 20px;
+    color: #8b0000;
+}
+
+.card-list ul{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.card-list li{
+    margin: 8px 0;
+}
